@@ -24,6 +24,6 @@ class PieceFactoryTest {
 
     IllegalArgumentException exception =
         assertThrows(IllegalArgumentException.class, () -> PieceFactory.create("invalid", cell));
-    assertEquals("Invalid piece", exception.getMessage());
+    assertEquals("Unknown piece type: invalid", exception.getMessage());
   }
 }

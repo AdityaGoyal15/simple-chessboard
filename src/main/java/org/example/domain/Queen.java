@@ -6,7 +6,7 @@ import java.util.stream.IntStream;
 
 public class Queen extends Piece {
 
-  protected Queen(Cell position) {
+  public Queen(Cell position) {
     super(position);
   }
 

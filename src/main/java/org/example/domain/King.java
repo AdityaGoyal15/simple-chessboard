@@ -5,7 +5,7 @@ import java.util.List;
 
 public class King extends Piece {
 
-  protected King(Cell position) {
+  public King(Cell position) {
     super(position);
   }
 

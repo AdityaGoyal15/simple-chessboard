@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Pawn extends Piece {
 
-  protected Pawn(Cell position) {
+  public Pawn(Cell position) {
     super(position);
   }
 

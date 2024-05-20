@@ -11,4 +11,8 @@ public abstract class Piece {
   }
 
   public abstract List<Cell> getAllPossibleMoves();
+
+  public Cell getPosition() {
+    return position;
+  }
 }

@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class PieceTypeTest {
 
   @Test
-  void getType_returns_type() {
+  void getType_returns_type_of_piece_type() {
     assertEquals("king", KING.getType());
   }
 
@@ -20,7 +20,7 @@ class PieceTypeTest {
   }
 
   @Test
-  void fromType_returns_null_when_called_with_unknown_piece_type() {
+  void fromType_throws_exception_when_called_with_unknown_piece_type() {
     IllegalArgumentException exception =
         assertThrows(IllegalArgumentException.class, () -> PieceType.fromType("Unknown"));
 
